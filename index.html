@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+</head>
+<body>
+    <form action="http://127.0.0.1/pw-3-tm-2/servidor.php" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="consulta">Consulta:</label>
+            <input type="text" name="q" id="consulta" placeholder="Ej. Donde queda Paraguay">
+        </div>
+        <div>
+            <label for="archivo">
+                Archivo
+            </label>
+            <input type="file" name="archivo-test" id="archivo">
+        </div>
+        <hr>
+        <div>
+            <span>Sexo:</span>
+            <hr>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="hombre" value="es-hombre" required >
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="mujer" value="es-mujer" required checked>
+        </div>
+        
+        <input type="submit" value="Enviar todo">
+        <input type="reset" value="Vaciar">
+    </form>
+</body>
+</html>

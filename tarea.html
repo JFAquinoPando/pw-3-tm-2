@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2 Ej1</title>
+</head>
+
+<body>
+    <form action="//127.0.0.1/pw-3-tm-2/codigo.php" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+
+        <div>
+            <label for="pais">País</label>
+            <select name="pais" id="pais" required>
+                <option disabled selected value="">Elegir País</option>
+                <option value="py">Paraguay</option>
+                <option value="ar">Argentina</option>
+                <option value="br">Brasil</option>
+            </select>
+        </div>
+        <div>
+            <label for="cond">Acepta términos y condiciones</label>
+            <input type="checkbox" name="cond" id="cond" required>
+        </div>
+        <div>
+            <div>
+                <label for="comentarios">
+                    Comentarios sobre nosotros
+                </label>
+            </div>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingresu tu comentario que es muy importante para nosotros (Pero no lo leeremos :) )" maxlength="3"></textarea>
+        </div>
+        <div>
+            <button>
+                Enviar
+            </button>
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+
+</html>
